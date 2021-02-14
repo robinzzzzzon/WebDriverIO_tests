@@ -1,10 +1,10 @@
-import HeadBar from '../pageObject/components/HeadBar'
 import NavBar from '../pageObject/components/NavBar'
-import assertions from '../lib/assertions'
+import CartNavBar from '../pageObject/components/CartNavBar'
+import AddCartForm from '../pageObject/components/AddCartForm'
 import MainPage from '../pageObject/pages/MainPage'
 import ProductPage from '../pageObject/pages/ProductPage'
 import CartPage from '../pageObject/pages/CartPage'
-import AddCartForm from '../pageObject/components/AddCartForm'
+import assertions from '../lib/assertions'
 
 describe('Test section of popular items', () => {
 	it('Should success add product to cart twice & delete from cart', () => {
@@ -20,6 +20,7 @@ describe('Test section of popular items', () => {
 		CartPage.emptyCartHeader.waitForExist()
 		assertions.$elHaveText(CartPage.emptyCartHeader, 'Your shopping cart is empty.')
 	})
+
 	it('Should success add product to cart & back to continue shopping', () => {
 		MainPage.open()
 		MainPage.popularItemAddToCart(5)
@@ -27,9 +28,10 @@ describe('Test section of popular items', () => {
 		AddCartForm.cartBtnClick()
 		assertions.$elHaveText(CartPage.countHeader, '1 Product')
 		assertions.haveUrlContaining('controller=order')
-		CartPage.continueBtnClick()
+		CartNavBar.continueBtnClick()
 		assertions.haveUrl('http://automationpractice.com/index.php')
 	})
+
 	//to-do: Не удаляется элемент в появляющемся списке.
 	it('Should success add product to cart & go to checkout cart', () => {
 		MainPage.open()
@@ -38,6 +40,7 @@ describe('Test section of popular items', () => {
 		NavBar.removeProductFromCart()
 		assertions.$elBeExist($('span=(empty)'))
 	})
+
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage', () => {
 		MainPage.open()
 		MainPage.popularItemMoreInfo(2)
@@ -46,6 +49,7 @@ describe('Test section of popular items', () => {
 		assertions.$elContainingText(AddCartForm.successHeader, 'Product successfully added')
 		AddCartForm.shoppingBtnClick()
 	})
+
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly', () => {
 		MainPage.open()
 		MainPage.popularItemMoreInfo(4)
@@ -55,6 +59,7 @@ describe('Test section of popular items', () => {
 		AddCartForm.cartBtnClick()
 		assertions.$elHaveText(CartPage.countHeader, '1 Product')
 	})
+
 	it('Should success add product to cart twice & delete from cart', () => {
 		MainPage.open()
 		MainPage.bestTabClick()
@@ -69,6 +74,7 @@ describe('Test section of popular items', () => {
 		CartPage.emptyCartHeader.waitForExist()
 		assertions.$elHaveText(CartPage.emptyCartHeader, 'Your shopping cart is empty.')
 	})
+
 	it('Should success add product to cart & back to continue shopping', () => {
 		MainPage.open()
 		MainPage.bestTabClick()
@@ -77,9 +83,10 @@ describe('Test section of popular items', () => {
 		AddCartForm.cartBtnClick()
 		assertions.$elHaveText(CartPage.countHeader, '1 Product')
 		assertions.haveUrlContaining('controller=order')
-		CartPage.continueBtnClick()
+		CartNavBar.continueBtnClick()
 		assertions.haveUrl('http://automationpractice.com/index.php')
 	})
+
 	//to-do: Не удаляется элемент в появляющемся списке.
 	it('Should success add product to cart & go to checkout cart', () => {
 		MainPage.open()
@@ -89,6 +96,7 @@ describe('Test section of popular items', () => {
 		NavBar.removeProductFromCart()
 		assertions.$elBeExist($('span=(empty)'))
 	})
+
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage', () => {
 		MainPage.open()
 		MainPage.bestTabClick()
@@ -98,6 +106,7 @@ describe('Test section of popular items', () => {
 		assertions.$elContainingText(AddCartForm.successHeader, 'Product successfully added')
 		AddCartForm.shoppingBtnClick()
 	})
+
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly', () => {
 		MainPage.open()
 		MainPage.bestTabClick()

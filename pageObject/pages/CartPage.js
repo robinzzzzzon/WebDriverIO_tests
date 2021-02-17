@@ -22,12 +22,12 @@ class CartPage extends AbstractPage {
 		return $('p=Your shopping cart is empty.')
 	}
 
-	get proceedToCheckBtn() {
-		return $('[title="Proceed to checkout"]')
+	get agreeCb() {
+		return $('#cgv')
 	}
 
-	get continueShopingBtn() {
-		return $('a=Continue shopping')
+	get completeHeader() {
+		return $('strong="Your order on My Store is complete."')
 	}
 
 	deleteAllItemsFromCart() {
@@ -35,14 +35,8 @@ class CartPage extends AbstractPage {
 		return this
 	}
 
-	continueBtnClick() {
-		methods.$click(this.continueShopingBtn)
-		return this
-	}
-
-	proceedBtnClick() {
-		methods.$click(this.proceedToCheckBtn)
-		return this
+	agreeCbClick() {
+		methods.$click(this.agreeCb)
 	}
 }
 

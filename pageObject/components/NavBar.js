@@ -23,7 +23,7 @@ class NavBar extends AbstractPage {
 	}
 
 	get removeProductBtn() {
-		return $('a#button_order_cart')
+		return $("//a[contains(@class,'ajax_cart_block_remove_link')]")
 	}
 
 	get checkOutBtn() {
@@ -52,7 +52,6 @@ class NavBar extends AbstractPage {
 	}
 
 	selectAnySection(num) {
-		//const num = Math.floor(Math.random * this.sectionsList.length)
 		methods.$selectAnyElement(this.sectionsList, num)
 		return this
 	}

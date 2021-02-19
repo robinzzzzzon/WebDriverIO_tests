@@ -26,6 +26,10 @@ class AuthPage extends AbstractPage {
 		return $('#SubmitLogin')
 	}
 
+	get logoutBtn() {
+		return $('[title="Log me out"]')
+	}
+
 	setNewEmail(value) {
 		methods.$setValue(this.emailCreateInput, value)
 		return this
@@ -57,10 +61,15 @@ class AuthPage extends AbstractPage {
 		return this
 	}
 
-	login(email = 'autoTrain@gmail.com', password = 'Qwerty123!') {
+	logIn(email = 'autoTrain@gmail.com', password = 'Qwerty123!') {
 		this.setExistsEmail(email)
 		this.setPassword(password)
 		this.loginBtnClick()
+		return this
+	}
+
+	logOut() {
+		methods.$click(this.logoutBtn)
 		return this
 	}
 }

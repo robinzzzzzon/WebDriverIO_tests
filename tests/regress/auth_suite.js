@@ -1,7 +1,7 @@
-import assertions from '../lib/assertions'
-import AuthPage from '../pageObject/pages/AuthPage'
-import SignUpPage from '../pageObject/pages/SignUpPage'
-import AccountPage from '../pageObject/pages/AccountPage'
+import assertions from '../../lib/assertions'
+import AuthPage from '../../pageObject/pages/AuthPage'
+import SignUpPage from '../../pageObject/pages/SignUpPage'
+import AccountPage from '../../pageObject/pages/AccountPage'
 
 describe('signUp test suites', () => {
 	beforeEach(() => {
@@ -14,8 +14,9 @@ describe('signUp test suites', () => {
 	})
 
 	it('Should get AccountPage after enter the exist login/password', () => {
-		AuthPage.login()
+		AuthPage.logIn()
 		assertions.haveUrlContaining('=my-account')
+		AuthPage.logOut()
 	})
 
 	it('Should create new account', () => {

@@ -14,6 +14,14 @@ class HeadBar extends AbstractPage {
 		return $('.header_user_info')
 	}
 
+	get signOut() {
+		return $('[title="Log me out"]')
+	}
+
+	get accountInfo() {
+		return $('[title="View my customer account"] > span')
+	}
+
 	contactUsClick() {
 		methods.$click(this.contactUs)
 		return this
@@ -21,6 +29,11 @@ class HeadBar extends AbstractPage {
 
 	signInClick() {
 		methods.$click(this.signIn)
+		return this
+	}
+
+	signOutClick() {
+		methods.$click(this.signOut)
 		return this
 	}
 }

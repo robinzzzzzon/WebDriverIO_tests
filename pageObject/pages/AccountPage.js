@@ -79,7 +79,7 @@ class AccountPage extends AbstractPage {
 	}
 
 	get wishListHeader() {
-		return $('h3="New wishlist"')
+		return $('h3.page-subheading')
 	}
 
 	get wishListInput() {
@@ -91,7 +91,11 @@ class AccountPage extends AbstractPage {
 	}
 
 	get wishListDelete() {
-		return $('.wishlist_delete')
+		return $('td.wishlist_delete a')
+	}
+
+	get wishListTable() {
+		return $('#block-order-detail')
 	}
 
 	historyClick() {

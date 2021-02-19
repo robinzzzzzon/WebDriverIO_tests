@@ -1,7 +1,8 @@
-import assertions from '../lib/assertions'
-import base_methods from '../lib/base_methods'
-import AccountPage from '../pageObject/pages/AccountPage'
-import AuthPage from '../pageObject/pages/AuthPage'
+import assertions from '../../lib/assertions'
+import base_methods from '../../lib/base_methods'
+import HeadBar from '../../pageObject/components/HeadBar'
+import AccountPage from '../../pageObject/pages/AccountPage'
+import AuthPage from '../../pageObject/pages/AuthPage'
 
 describe('accountPage test suites', () => {
 	it('Should get history status from orderItem', () => {
@@ -22,7 +23,7 @@ describe('accountPage test suites', () => {
 		AccountPage.backToBtnClick()
 	})
 
-	it('Should create new account', () => {
+	it('Should change & save new personal info', () => {
 		AccountPage.open()
 		AccountPage.personalInfoClick()
 		AccountPage.saveInfoBtnClick()
@@ -30,5 +31,17 @@ describe('accountPage test suites', () => {
 		AccountPage.setCurrentPswd()
 		AccountPage.saveInfoBtnClick()
 		assertions.$elContainingText(AccountPage.infoAlertSuccess, 'personal information has been successfully updated')
+	})
+
+	it('Should create & delete new wishList', () => {
+		AccountPage.open()
+		AccountPage.wishListsClick()
+		assertions.$elBeVisible(AccountPage.wishListHeader)
+		AccountPage.setWishListName().saveWishList().deleteWishList()
+		base_methods.$handleAlert(true)
+		AccountPage.homeBtnClick()
+		assertions.$elHaveText(HeadBar.accountInfo, 'Kris Delaver')
+		HeadBar.signOutClick()
+		assertions.$elBeVisible(HeadBar.signIn)
 	})
 })

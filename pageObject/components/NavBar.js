@@ -15,7 +15,7 @@ class NavBar extends AbstractPage {
 	}
 
 	get sectionsList() {
-		return $$('#block_top_menu > ul > li > a')
+		return $$('#block_top_menu > ul > li')
 	}
 
 	get shopCart() {
@@ -57,15 +57,24 @@ class NavBar extends AbstractPage {
 	}
 
 	sectionWomenClick() {
-		methods.$click(this.sectionsList[0])
+		methods.$click(this.sectionsList[0].$('a'))
+		return this
 	}
 
 	sectionDressesClick() {
-		methods.$click(this.sectionsList[1])
+		methods.$click(this.sectionsList[1].$('a'))
+		return this
+	}
+
+	sectionSummerDressesClick() {
+		methods.$getLocationAndMoveTo(this.sectionsList[1])
+		methods.$click(this.sectionsList[1].$('ul > li:nth-child(2) > a'))
+		return this
 	}
 
 	sectionTshirtsClick() {
 		methods.$click(this.sectionsList[2])
+		return this
 	}
 
 	navigateToCart() {
@@ -77,11 +86,13 @@ class NavBar extends AbstractPage {
 	removeProductFromCart() {
 		this.navigateToCart()
 		methods.$click(this.removeProductBtn)
+		return this
 	}
 
 	checkOutCart() {
 		this.navigateToCart()
 		methods.$click(this.checkOutBtn)
+		return this
 	}
 }
 

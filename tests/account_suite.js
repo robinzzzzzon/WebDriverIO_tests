@@ -1,8 +1,8 @@
-import assertions from '../../lib/assertions'
-import base_methods from '../../lib/base_methods'
-import HeadBar from '../../pageObject/components/HeadBar'
-import AccountPage from '../../pageObject/pages/AccountPage'
-import AuthPage from '../../pageObject/pages/AuthPage'
+import assertions from '../lib/assertions'
+import base_methods from '../lib/base_methods'
+import HeadBar from '../pageObject/components/HeadBar'
+import AccountPage from '../pageObject/pages/AccountPage'
+import AuthPage from '../pageObject/pages/AuthPage'
 
 describe('accountPage test suites', () => {
 	it('Should get history status from orderItem', () => {

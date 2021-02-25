@@ -5,6 +5,7 @@ import MainPage from '../pageObject/pages/MainPage'
 import ProductPage from '../pageObject/pages/ProductPage'
 import CartPage from '../pageObject/pages/CartPage'
 import assertions from '../lib/assertions'
+import allure from '@wdio/allure-reporter'
 
 describe('Test section of popular items', () => {
 	beforeEach(() => {
@@ -12,6 +13,7 @@ describe('Test section of popular items', () => {
 	})
 
 	it('Should success add product to cart twice & delete from cart', () => {
+		allure.addSeverity('Critical')
 		MainPage.popularItemAddToCart(1)
 		assertions.$elContainingText(AddCartForm.successHeader, 'Product successfully added')
 		AddCartForm.crossBtnClick()
@@ -25,6 +27,7 @@ describe('Test section of popular items', () => {
 	})
 
 	it('Should success add product to cart & back to continue shopping', () => {
+		allure.addSeverity('Minor')
 		MainPage.popularItemAddToCart(5)
 		MainPage.shortwait()
 		AddCartForm.cartBtnClick()
@@ -35,6 +38,7 @@ describe('Test section of popular items', () => {
 	})
 
 	it('Should success add product to cart & go to checkout cart', () => {
+		allure.addSeverity('Critical')
 		MainPage.popularItemAddToCart(5)
 		AddCartForm.shoppingBtnClick()
 		NavBar.removeProductFromCart()
@@ -42,6 +46,7 @@ describe('Test section of popular items', () => {
 	})
 
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage', () => {
+		allure.addSeverity('Blocker')
 		MainPage.popularItemMoreInfo(2)
 		assertions.haveUrlContaining('product')
 		ProductPage.cartBtnClick()
@@ -50,6 +55,7 @@ describe('Test section of popular items', () => {
 	})
 
 	it('Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly', () => {
+		allure.addSeverity('Normal')
 		MainPage.popularItemMoreInfo(4)
 		assertions.haveUrlContaining('product')
 		ProductPage.cartBtnClick()

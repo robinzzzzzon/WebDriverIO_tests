@@ -1,0 +1,61 @@
+{
+  "uid" : "9950e72624582dcd",
+  "name" : "Should add two items to compare and after all remove them",
+  "fullName" : "accountPage test suites.Should add two items to compare and after all remove them",
+  "historyId" : "4a920bc1f88cade20288c1763b77bfb8",
+  "time" : {
+    "start" : 1614199560872,
+    "stop" : 1614199572662,
+    "duration" : 11790
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testClass",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should add two items to compare and after all remove them"
+  }, {
+    "name" : "package",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9950e72624582dcd.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

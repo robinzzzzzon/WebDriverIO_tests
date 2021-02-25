@@ -1,0 +1,61 @@
+{
+  "uid" : "28acc1bca3cb3a29",
+  "name" : "Should can click quick view and can get more info about this item",
+  "fullName" : "accountPage test suites.Should can click quick view and can get more info about this item",
+  "historyId" : "d2771c602072fcda6f1450e8fc2101e1",
+  "time" : {
+    "start" : 1614199551471,
+    "stop" : 1614199557599,
+    "duration" : 6128
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testClass",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should can click quick view and can get more info about this item"
+  }, {
+    "name" : "package",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28acc1bca3cb3a29.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

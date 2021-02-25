@@ -54,11 +54,7 @@ exports.config = {
 			//
 			browserName: config.browser,
 			'goog:chromeOptions': {
-				args: [
-					'disable-infobars',
-					'disable-popup-blocking',
-					'disable-notifications',
-				],
+				args: ['disable-infobars', 'disable-popup-blocking', 'disable-notifications'],
 				prefs: {
 					'profile.default_content_settings.popups': 2,
 					'profile.default_content_settings.notifications': 2,
@@ -140,7 +136,16 @@ exports.config = {
 	// Test reporter for stdout.
 	// The only one supported by default is 'dot'
 	// see also: https://webdriver.io/docs/dot-reporter.html
-	reporters: ['spec'],
+	reporters: [
+		[
+			'allure',
+			{
+				outputDir: 'allure-results',
+				disableWebdriverStepsReporting: true,
+				disableWebdriverScreenshotsReporting: true,
+			},
+		],
+	],
 	port: 4444,
 	//
 	// Options to be passed to Mocha.

@@ -1,0 +1,75 @@
+{
+  "uid" : "e55a633f9148700f",
+  "name" : "Should success add product to cart twice & delete from cart",
+  "fullName" : "Test section of popular items.Should success add product to cart twice & delete from cart",
+  "historyId" : "18a0b926ba034fed6962460ef02a03c0",
+  "time" : {
+    "start" : 1614199578992,
+    "stop" : 1614199584570,
+    "duration" : 5578
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Couldn't click on [object Object]",
+  "statusTrace" : "Error: Couldn't click on [object Object]\n                    at Object.$click (D:\\JSRepo\\WebDriverIO\\lib\\/base_methods.js:57:10)\n                    at AddCardForm.cartBtnClick (D:\\JSRepo\\WebDriverIO\\pageObject\\components\\/AddCartForm.js:26:11)\n                    at Context.<anonymous> (D:\\JSRepo\\WebDriverIO\\tests\\/popularList_suite.js:22:15)\n                    at Context.executeSync (D:\\JSRepo\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at D:\\JSRepo\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "0-4"
+  }, {
+    "name" : "suite",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "testClass",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should success add product to cart twice & delete from cart"
+  }, {
+    "name" : "package",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "f086ace151b2a5cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614199506036,
+        "stop" : 1614199516174,
+        "duration" : 10138
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e55a633f9148700f.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

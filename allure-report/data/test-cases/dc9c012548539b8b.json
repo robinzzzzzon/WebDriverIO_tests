@@ -1,0 +1,61 @@
+{
+  "uid" : "dc9c012548539b8b",
+  "name" : "Should get signUpPage after enter new email",
+  "fullName" : "signUp test suites.Should get signUpPage after enter new email",
+  "historyId" : "b6d67f0d961e1571437f252067dab617",
+  "time" : {
+    "start" : 1614199480619,
+    "stop" : 1614199489179,
+    "duration" : 8560
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "testClass",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get signUpPage after enter new email"
+  }, {
+    "name" : "package",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc9c012548539b8b.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

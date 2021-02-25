@@ -1,0 +1,61 @@
+{
+  "uid" : "983c74d996daa608",
+  "name" : "Should get AccountPage after enter the exist login/password",
+  "fullName" : "signUp test suites.Should get AccountPage after enter the exist login/password",
+  "historyId" : "4dd959a2a9d3beb7a144e904227c8c30",
+  "time" : {
+    "start" : 1614199489180,
+    "stop" : 1614199495096,
+    "duration" : 5916
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "testClass",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get AccountPage after enter the exist login/password"
+  }, {
+    "name" : "package",
+    "value" : "signUp test suites"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "983c74d996daa608.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

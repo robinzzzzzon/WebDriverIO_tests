@@ -1,0 +1,59 @@
+{
+  "uid" : "ca029856d60b07e",
+  "name" : "Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly",
+  "fullName" : "Test section of popular items.Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly",
+  "historyId" : "748c966727d63872a4a1fa6ca1a76d68",
+  "time" : {
+    "start" : 1614199530411,
+    "stop" : 1614199538135,
+    "duration" : 7724
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "testClass",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should success get moreInfo about product & can add this product to cart out of ProductPage and checkout immediatelly"
+  }, {
+    "name" : "package",
+    "value" : "Test section of popular items"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ca029856d60b07e.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

@@ -1,0 +1,61 @@
+{
+  "uid" : "c662cac345e8f852",
+  "name" : "Should two items add to wishList",
+  "fullName" : "accountPage test suites.Should two items add to wishList",
+  "historyId" : "b99888142069751a41828ad46bdcc2e7",
+  "time" : {
+    "start" : 1614199572664,
+    "stop" : 1614199577139,
+    "duration" : 4475
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testClass",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should two items add to wishList"
+  }, {
+    "name" : "package",
+    "value" : "accountPage test suites"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-88.0.4324.182"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c662cac345e8f852.json",
+  "parameterValues" : [ "chrome-88.0.4324.182" ]
+}

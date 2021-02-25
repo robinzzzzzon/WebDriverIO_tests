@@ -1,10 +1,10 @@
-import NavBar from '../pageObject/components/NavBar'
-import CartNavBar from '../pageObject/components/CartNavBar'
-import AddCartForm from '../pageObject/components/AddCartForm'
-import MainPage from '../pageObject/pages/MainPage'
-import ProductPage from '../pageObject/pages/ProductPage'
-import CartPage from '../pageObject/pages/CartPage'
-import assertions from '../lib/assertions'
+import NavBar from '../../pageObject/components/NavBar'
+import CartNavBar from '../../pageObject/components/CartNavBar'
+import AddCartForm from '../../pageObject/components/AddCartForm'
+import MainPage from '../../pageObject/pages/MainPage'
+import ProductPage from '../../pageObject/pages/ProductPage'
+import CartPage from '../../pageObject/pages/CartPage'
+import assertions from '../../lib/assertions'
 import allure from '@wdio/allure-reporter'
 
 describe('Test section of popular items', () => {

@@ -145,6 +145,12 @@ exports.config = {
 				disableWebdriverScreenshotsReporting: true,
 			},
 		],
+		[
+			'junit',
+			{
+				outputDir: './junit-report',
+			},
+		],
 	],
 	port: 4444,
 	//

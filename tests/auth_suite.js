@@ -2,6 +2,7 @@ import assertions from '../lib/assertions'
 import AuthPage from '../pageObject/pages/AuthPage'
 import SignUpPage from '../pageObject/pages/SignUpPage'
 import AccountPage from '../pageObject/pages/AccountPage'
+import { welcomeAccText } from '../lib/assertData'
 import allure from '@wdio/allure-reporter'
 
 describe('signUp test suites', () => {
@@ -22,11 +23,12 @@ describe('signUp test suites', () => {
 		AuthPage.logOut()
 	})
 
-	it('Should create new account', () => {
+	it.only('Should create new account', function () {
+		this.retries(2)
 		allure.addSeverity('Blocker')
 		AuthPage.createAccount()
 		SignUpPage.fillSignUpForm()
 		assertions.haveUrlContaining('my-account') &&
-			assertions.$elContainingText(AccountPage.infoAccount, 'Welcome to your account.')
+			assertions.$elContainingText(AccountPage.infoAccount, welcomeAccText)
 	})
 })

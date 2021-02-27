@@ -2,10 +2,6 @@ import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 
 class ProductPage extends AbstractPage {
-	open(id) {
-		super.open(`http://automationpractice.com/index.php?id_product=${id}&controller=product`)
-	}
-
 	get countUpBtn() {
 		return $('.product_quantity_up')
 	}
@@ -16,6 +12,10 @@ class ProductPage extends AbstractPage {
 
 	get colorList() {
 		return $$('.color_to_pick_list > li')
+	}
+
+	open(id) {
+		super.open(`http://automationpractice.com/index.php?id_product=${id}&controller=product`)
 	}
 
 	countUpClick() {

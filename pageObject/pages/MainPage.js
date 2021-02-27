@@ -2,10 +2,6 @@ import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 
 class MainPage extends AbstractPage {
-	open() {
-		super.open('http://automationpractice.com/index.php')
-	}
-
 	get shopNowBtn() {
 		return $('button=Shop now !')
 	}
@@ -40,6 +36,10 @@ class MainPage extends AbstractPage {
 
 	get bestButtonList() {
 		return $$('.blockbestsellers > li > div > .right-block')
+	}
+
+	open() {
+		super.open('http://automationpractice.com/index.php')
 	}
 
 	static checkViewPort(element) {

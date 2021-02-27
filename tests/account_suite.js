@@ -29,11 +29,9 @@ describe('accountPage test suites', () => {
 	it('Should change & save new personal info', () => {
 		allure.addSeverity('Normal')
 		AccountPage.open()
-		AccountPage.personalInfoClick()
-		AccountPage.saveInfoBtnClick()
+		AccountPage.personalInfoClick().saveInfoBtnClick()
 		assertions.$elBeVisible(AccountPage.infoError)
-		AccountPage.setCurrentPswd()
-		AccountPage.saveInfoBtnClick()
+		AccountPage.setCurrentPswd().saveInfoBtnClick()
 		assertions.$elContainingText(AccountPage.infoAlertSuccess, 'personal information has been successfully updated')
 	})
 
@@ -43,7 +41,7 @@ describe('accountPage test suites', () => {
 		AccountPage.wishListsClick()
 		assertions.$elBeVisible(AccountPage.wishListHeader)
 		AccountPage.setWishListName().saveWishList().deleteWishList()
-		base_methods.$handleAlert(true)
+		base_methods.$handleAlert()
 		AccountPage.homeBtnClick()
 		assertions.$elHaveText(HeadBar.accountInfo, 'Kris Delaver')
 		HeadBar.signOutClick()

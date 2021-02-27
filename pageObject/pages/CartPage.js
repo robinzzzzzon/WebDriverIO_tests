@@ -2,10 +2,6 @@ import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 
 class CartPage extends AbstractPage {
-	open() {
-		super.open('http://automationpractice.com/index.php?controller=order')
-	}
-
 	get cartTitle() {
 		return $('#cart_title')
 	}
@@ -28,6 +24,10 @@ class CartPage extends AbstractPage {
 
 	get completeHeader() {
 		return $('strong="Your order on My Store is complete."')
+	}
+
+	open() {
+		super.open('http://automationpractice.com/index.php?controller=order')
 	}
 
 	deleteAllItemsFromCart() {

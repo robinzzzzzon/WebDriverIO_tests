@@ -3,9 +3,6 @@ import data from '../../lib/helpers'
 import AbstractPage from '../AbstractPage'
 
 class AuthPage extends AbstractPage {
-	open() {
-		super.open('http://automationpractice.com/index.php?controller=authentication&back=my-account')
-	}
 	get emailCreateInput() {
 		return $('#email_create')
 	}
@@ -28,6 +25,10 @@ class AuthPage extends AbstractPage {
 
 	get logoutBtn() {
 		return $('[title="Log me out"]')
+	}
+
+	open() {
+		super.open('http://automationpractice.com/index.php?controller=authentication&back=my-account')
 	}
 
 	setNewEmail(value) {

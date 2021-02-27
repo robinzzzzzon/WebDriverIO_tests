@@ -3,10 +3,6 @@ import helpers from '../../lib/helpers'
 import AbstractPage from '../AbstractPage'
 
 class SignUpPage extends AbstractPage {
-	open() {
-		super.open(`http://automationpractice.com/index.php?controller=authentication#account-creation`)
-	}
-
 	get mrRB() {
 		return $('#uniform-id_gender1')
 	}
@@ -85,6 +81,10 @@ class SignUpPage extends AbstractPage {
 
 	get registerBtn() {
 		return $('#submitAccount')
+	}
+
+	open() {
+		super.open(`http://automationpractice.com/index.php?controller=authentication#account-creation`)
 	}
 
 	static checkViewPort(element) {

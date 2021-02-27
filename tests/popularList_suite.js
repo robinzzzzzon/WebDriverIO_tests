@@ -6,6 +6,7 @@ import ProductPage from '../pageObject/pages/ProductPage'
 import CartPage from '../pageObject/pages/CartPage'
 import assertions from '../lib/assertions'
 import allure from '@wdio/allure-reporter'
+import base_methods from '../lib/base_methods'
 
 describe('Test section of popular items', () => {
 	beforeEach(() => {
@@ -19,6 +20,7 @@ describe('Test section of popular items', () => {
 		AddCartForm.crossBtnClick()
 		MainPage.popularItemAddToCart(2)
 		assertions.$elContainingText(AddCartForm.successHeader, 'Product successfully added')
+		base_methods.$waitUntilElIsClickable(AddCartForm.checkoutCartBtn, 3000)
 		AddCartForm.cartBtnClick()
 		assertions.$elHaveText(CartPage.countHeader, '2 Products')
 		CartPage.deleteAllItemsFromCart()

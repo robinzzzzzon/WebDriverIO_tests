@@ -2,10 +2,6 @@ import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 
 class AccountPage extends AbstractPage {
-	open() {
-		super.open('http://automationpractice.com/index.php?controller=my-account')
-	}
-
 	get infoAccount() {
 		return $('.info-account')
 	}
@@ -91,11 +87,15 @@ class AccountPage extends AbstractPage {
 	}
 
 	get wishListDelete() {
-		return $('td.wishlist_delete a')
+		return $('td.wishlist_delete > a')
 	}
 
 	get wishListTable() {
 		return $('#block-order-detail')
+	}
+
+	open() {
+		super.open('http://automationpractice.com/index.php?controller=my-account')
 	}
 
 	historyClick() {

@@ -2,10 +2,6 @@ import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 
 class ComparePage extends AbstractPage {
-	open() {
-		super.open('http://automationpractice.com/index.php?controller=products-comparison')
-	}
-
 	get compareHeader() {
 		return $('.page-heading')
 	}
@@ -24,6 +20,10 @@ class ComparePage extends AbstractPage {
 
 	get continueShoppingBtn() {
 		return $('.footer_link > li > a')
+	}
+
+	open() {
+		super.open('http://automationpractice.com/index.php?controller=products-comparison')
 	}
 
 	removeAllItems() {

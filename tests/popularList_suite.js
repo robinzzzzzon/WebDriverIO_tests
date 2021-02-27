@@ -6,7 +6,7 @@ import ProductPage from '../pageObject/pages/ProductPage'
 import CartPage from '../pageObject/pages/CartPage'
 import assertions from '../lib/assertions'
 import base_methods from '../lib/base_methods'
-import { addSuccessText, emptyCartText, mainPageUrl } from '../lib/assertData'
+import { addSuccessText, emptyCartText, mainPageUrl } from '../lib/anyData'
 import allure from '@wdio/allure-reporter'
 
 describe('Test section of popular items', () => {
@@ -14,8 +14,7 @@ describe('Test section of popular items', () => {
 		MainPage.open()
 	})
 
-	it('Should success add product to cart twice & delete from cart', function () {
-		this.retries(1)
+	it('Should success add product to cart twice & delete from cart', () => {
 		allure.addSeverity('Critical')
 		MainPage.popularItemAddToCart(1)
 		assertions.$elContainingText(AddCartForm.successHeader, addSuccessText)

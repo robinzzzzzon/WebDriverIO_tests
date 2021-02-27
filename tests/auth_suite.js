@@ -2,7 +2,7 @@ import assertions from '../lib/assertions'
 import AuthPage from '../pageObject/pages/AuthPage'
 import SignUpPage from '../pageObject/pages/SignUpPage'
 import AccountPage from '../pageObject/pages/AccountPage'
-import { welcomeAccText } from '../lib/assertData'
+import { welcomeAccText } from '../lib/anyData'
 import allure from '@wdio/allure-reporter'
 
 describe('signUp test suites', () => {

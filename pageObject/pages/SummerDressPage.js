@@ -1,4 +1,3 @@
-import base_methods from '../../lib/base_methods'
 import methods from '../../lib/base_methods'
 import AbstractPage from '../AbstractPage'
 

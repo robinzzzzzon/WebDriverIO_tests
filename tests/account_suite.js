@@ -3,7 +3,7 @@ import base_methods from '../lib/base_methods'
 import HeadBar from '../pageObject/components/HeadBar'
 import AccountPage from '../pageObject/pages/AccountPage'
 import AuthPage from '../pageObject/pages/AuthPage'
-import { creditText, personalInfoText, welcomeAccText } from '../lib/assertData'
+import { creditText, personalInfoText, welcomeAccText } from '../lib/anyData'
 import allure from '@wdio/allure-reporter'
 
 describe('accountPage test suites', () => {

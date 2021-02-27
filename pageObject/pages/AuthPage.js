@@ -1,5 +1,5 @@
 import methods from '../../lib/base_methods'
-import data from '../../lib/helpers'
+import helpers from '../../lib/helper_methods'
 import AbstractPage from '../AbstractPage'
 
 class AuthPage extends AbstractPage {
@@ -56,7 +56,7 @@ class AuthPage extends AbstractPage {
 		return this
 	}
 
-	createAccount(newEmail = data.getRandomEmail()) {
+	createAccount(newEmail = helpers.getRandomEmail()) {
 		this.setNewEmail(newEmail)
 		this.createBtnClick()
 		return this

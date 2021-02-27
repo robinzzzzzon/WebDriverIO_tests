@@ -4,7 +4,7 @@ import AddCartForm from '../pageObject/components/AddCartForm'
 import ComparePage from '../pageObject/pages/ComparePage'
 import SummerDressPage from '../pageObject/pages/SummerDressPage'
 import CartPage from '../pageObject/pages/CartPage'
-import { addSuccessText } from '../lib/assertData'
+import { addSuccessText } from '../lib/anyData'
 import allure from '@wdio/allure-reporter'
 
 describe('accountPage test suites', () => {

@@ -1,5 +1,5 @@
 import methods from '../../lib/base_methods'
-import helpers from '../../lib/helpers'
+import helpers from '../../lib/helper_methods'
 import AbstractPage from '../AbstractPage'
 
 class SignUpPage extends AbstractPage {
@@ -228,6 +228,7 @@ class SignUpPage extends AbstractPage {
 		this.setHomePhone()
 		this.setMobilePhone()
 		this.registerBtnClick()
+		return this
 	}
 }
 
